@@ -5,24 +5,69 @@
 <title>Contacto</title>
 
 <style>
-html, body {
-  margin: 0;
-  padding: 0;
+
+html, body{
+  margin:0;
+  padding:0;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 0;
+/* imagen */
+img{
+  display:block;
+  width:100%;
+  height:auto;
+  border:0;
 }
+
+/* pleca contáctanos */
+.contact-tab{
+  position:fixed;
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+  background:#00529B; /* azul principal Telcel */
+  color:white;
+  padding:18px 14px; /* +25% */
+  border-radius:10px 0 0 10px;
+  font-family:Arial, sans-serif;
+  font-weight:bold;
+  font-size:18px;
+  text-decoration:none;
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* icono */
+.contact-tab svg{
+  width:22px; /* más grande */
+  height:22px;
+  fill:white;
+}
+
+.contact-tab:hover{
+  background:#0071D1;
+}
+
 </style>
-
 </head>
 
 <body>
 
 <img src="contactanos.jpeg" alt="Contáctanos">
+
+<a class="contact-tab" href="https://www.telcel.com/empresas/contacto">
+
+<!-- icono correo -->
+<svg viewBox="0 0 24 24">
+<path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+</svg>
+
+Contáctanos
+
+</a>
 
 </body>
 </html>
